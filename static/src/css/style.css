@@ -1724,14 +1724,19 @@ template {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: var(--o-color-text, #232022) !important;
+  background-color: var(--o-color-background, #fff) !important;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-color: transparent;
-  border-bottom-color: var(--border-color);
+  border: 1px solid var(--o-color-border, #ced4da) !important;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.contact .contact_left .name .contact-form .form-control::placeholder {
+  color: var(--o-color-text-muted, #888) !important;
+}
+.contact .contact_left .name .contact-form .form-control:focus {
+  border-color: var(--o-color-primary, #006e5a) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0,110,90,.25); /* Byt färgkod om du vill ha exakt samma färg som primary */
 }
 
 .contact .contact_left .name .contact-form .input-block {
