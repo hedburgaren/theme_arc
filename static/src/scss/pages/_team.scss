@@ -18,7 +18,7 @@
       .who {
         font-size: 28px;
         font-weight: 700;
-        color: var(--autofly-orange);
+        color: var(--o-color-secondary, #EB583D);
         letter-spacing: 1px;
       }
 
@@ -50,7 +50,7 @@
         }
 
         h4 {
-          color: var(--autofly-orange);
+          color: var(--o-color-secondary, #EB583D);
           font-size: 18px;
           padding-bottom: 15px;
         }
@@ -58,7 +58,7 @@
 
       ul li::before {
         content: "\2022";
-        color: var(--autofly-orange);
+        color: var(--o-color-secondary, #EB583D);
         font-weight: bold;
         display: inline-block;
         width: 1em;
@@ -89,7 +89,7 @@
       h5 {
         font-size: 16px;
         font-weight: 700;
-        color: var(--autofly-orange);
+        color: var(--o-color-secondary, #EB583D);
 
         @media screen and (max-width:768px) {
           font-size: 15px;

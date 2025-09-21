@@ -1,18 +1,7 @@
 :root {
-  --white-color: #ffff;
-  --off-white:#F8F8F8;
-  --black-color: #000000;
-  --autofly-red: #D10202;
-  --autofly-text-red: #D10205;
-  --autofly-orange:#EB583D;
-  --grey-1:#8b8b8b;
-  --grey-2:#606060;
-  --grey-3:#747474;
-  --border-color:#E3E2DF;
-  --border-color-2:#D7D4D4;
-  --button-s-bg: #eb583d1a;
-  --heading-color:#282828;
-  --section-bg:#252525;
+  --white-color: #fff;    
+  --off-white: #F8F8F8;   
+  --black-color: #000;    
 }
 
 *:focus {
@@ -138,7 +127,7 @@ body {
 }
 
 .common_p {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -149,7 +138,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 35px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -505,7 +494,7 @@ template {
   padding: 10px 25px;
   position: relative;
   background-color: var(--white-color);
-  color: var(--autofly-text-red) !important;
+  color: var(--o-color-primary, #D10205) !important;
   transition: all 0.3s;
 }
 
@@ -517,7 +506,7 @@ template {
   padding: 10px 25px;
   position: relative;
   background-color: var(--button-s-bg);
-  color: var(--autofly-text-red) !important;
+  color: var(--o-color-primary, #D10205) !important;
   transition: all 0.3s;
 }
 
@@ -528,7 +517,7 @@ template {
   text-decoration: none;
   padding: 10px 25px;
   position: relative;
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   color: var(--white-color) !important;
   transition: all 0.3s;
   font-size: 16px;
@@ -609,7 +598,7 @@ template {
 }
 
 .banner_sub .banner_content .breadcrumb .breadcrumb-item {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 .banner_sub .banner_content .breadcrumb .breadcrumb-item:first-child::before {
@@ -629,7 +618,7 @@ template {
 }
 
 .banner_sub .banner_content .breadcrumb .breadcrumb-item a:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 .banner_contact {
@@ -686,7 +675,7 @@ template {
 }
 
 .header_modern_light .top_bar .top_bar_left ul li a:hover svg path {
-  fill: var(--autofly-orange);
+  fill: var(--o-color-secondary, #EB583D);
   transition: all ease 0.3s;
 }
 
@@ -695,12 +684,12 @@ template {
 }
 
 .header_modern_light .top_bar .top_bar_left ul li a span {
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
   font-weight: 400;
 }
 
 .header_modern_light .top_bar .top_bar_left ul li a span:hover {
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .header_modern_light .top_bar .top_bar_left ul li:last-child {
@@ -721,13 +710,13 @@ template {
 }
 
 .header_modern_light .top_bar .top_bar_right ul li a {
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
   font-weight: 400;
 }
 
 .header_modern_light .top_bar .top_bar_right ul li a:hover {
   text-decoration: none;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .header_modern_light .top_bar .top_bar_right ul li:last-child {
@@ -735,7 +724,7 @@ template {
   padding-left: 8px;
   border: 1px solid;
   border-color: transparent;
-  border-left-color: var(--grey-2) !important;
+  border-left-color: var(--o-color-text-muted, #606060) !important;
 }
 
 .header_modern_light .navigation {
@@ -789,7 +778,7 @@ template {
 }
 
 .header_modern_light .navigation .navbar .navbar-nav .nav-item .nav-link {
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
   font-size: 14px;
   margin: 0px 15px;
   font-weight: 400;
@@ -797,7 +786,7 @@ template {
 }
 
 .header_modern_light .navigation .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: var(--autofly-red);
+  color: var(--o-color-primary, #D10202);
 }
 
 .header_modern_light .navigation .navbar form {
@@ -816,12 +805,12 @@ template {
 }
 
 .header_modern_light .navigation .navbar form span a:hover svg path {
-  fill: var(--autofly-red);
+  fill: var(--o-color-primary, #D10202);
   transition: all ease 0.3s;
 }
 
 .header_modern_light .navigation .navbar form span a:hover svg line {
-  stroke: var(--autofly-red);
+  stroke: var(--o-color-primary, #D10202);
   transition: all ease 0.3s;
 }
 
@@ -920,7 +909,7 @@ template {
 
 .navbar-toggler span {
   display: block;
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   height: 3px;
   width: 25px;
   margin-top: 5px;
@@ -987,7 +976,7 @@ template {
 }
 
 .footer .wrapper .footer_content .footer_link li a:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   text-decoration: none;
 }
 
@@ -1010,12 +999,12 @@ template {
 .search .search_bar .brand p {
   margin-bottom: 5px;
   font-size: 10px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .search .search_bar .brand .b_name {
   font-size: 16px;
-  color: var(--autofly-text-red);
+  color: var(--o-color-primary, #D10205);
 }
 
 .search .search_bar .spec_c {
@@ -1029,7 +1018,7 @@ template {
 
 .search .search_bar .spec_c .spec {
   font-size: 10px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 @media screen and (max-width: 768px) {
@@ -1081,13 +1070,13 @@ template {
 .find_car .wrapper .f_c_info .car_name {
   font-size: 18px;
   font-weight: 700;
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
   margin-bottom: 5px;
 }
 
 .find_car .wrapper .f_c_info .count {
   font-size: 16px;
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
 }
 
 .find_car .wrapper .f_c_info:hover {
@@ -1095,11 +1084,11 @@ template {
 }
 
 .find_car .wrapper .f_c_info:hover .car_name {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 .find_car .wrapper .f_c_info:hover .count {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 .partners {
@@ -1196,7 +1185,7 @@ template {
 
 .Popular .wrapper .product_card a .card_bottom .c_b_wrapper span {
   font-size: 14px;
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
 }
 
 .Popular .wrapper .product_card .p_c_bottom {
@@ -1235,12 +1224,12 @@ template {
   font-weight: 400;
   font-size: 22px;
   line-height: 35px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
   margin-bottom: 20px;
 }
 
 .choose .wrapper .choose_left .c_details h6 {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-size: 22px;
   text-transform: capitalize;
   font-weight: 700;
@@ -1269,7 +1258,7 @@ template {
 }
 
 .testimonial .wrapper .slider_wrapper .owl-carousel .item .item_wrapper {
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   border-radius: 8px;
   padding: 30px 25px 25px 25px;
 }
@@ -1415,7 +1404,7 @@ template {
 }
 
 .blog_index .wrapper .blog_wrapper .card .tag {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   position: absolute;
   border-radius: 3px;
   font-weight: 400;
@@ -1444,7 +1433,7 @@ template {
 
 .blog_index .wrapper .blog_wrapper .card .card-body .card-text {
   font-size: 18px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .blog_index .wrapper .blog_wrapper .card .card-body .read_more {
@@ -1453,12 +1442,12 @@ template {
 }
 
 .blog_index .wrapper .blog_wrapper .card .card-body .read_more:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   text-decoration: none;
 }
 
 .blog_index .wrapper .blog_wrapper .card .card-body .read_more:hover svg path {
-  fill: var(--autofly-orange);
+  fill: var(--o-color-secondary, #EB583D);
   transition: all ease 0.3s;
 }
 
@@ -1477,7 +1466,7 @@ template {
 }
 
 .contact .contact_left .name p {
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
 }
 
 .contact .contact_left .name .contact-form {
@@ -1548,7 +1537,7 @@ template {
 }
 
 .contact .contact_right .phone a:hover {
-  color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .map .mapouter {
@@ -1593,7 +1582,7 @@ template {
 }
 
 .blog_main .wrapper .blog_wrapper .card .tag {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   position: absolute;
   border-radius: 3px;
   font-weight: 400;
@@ -1623,7 +1612,7 @@ template {
 
 .blog_main .wrapper .blog_wrapper .card .card-body .card-text {
   font-size: 18px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .blog_main .wrapper .blog_wrapper .card .card-body .read_more {
@@ -1632,12 +1621,12 @@ template {
 }
 
 .blog_main .wrapper .blog_wrapper .card .card-body .read_more:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   text-decoration: none;
 }
 
 .blog_main .wrapper .blog_wrapper .card .card-body .read_more:hover svg path {
-  fill: var(--autofly-orange);
+  fill: var(--o-color-secondary, #EB583D);
   transition: all ease 0.3s;
 }
 
@@ -1662,17 +1651,17 @@ template {
   display: block;
   padding: 5px 10px;
   border-radius: 5px;
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-size: 16px;
 }
 
 .blog_main .pagination-area ul li a.active {
-  border: 1px solid var(--autofly-orange);
+  border: 1px solid var(--o-color-secondary, #EB583D);
 }
 
 .blog_main .pagination-area ul li a:hover {
   color: #fff;
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   text-decoration: none;
 }
 
@@ -1700,7 +1689,7 @@ template {
 .team .about_main .wrapper_a .who {
   font-size: 28px;
   font-weight: 700;
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   letter-spacing: 1px;
 }
 
@@ -1736,14 +1725,14 @@ template {
 }
 
 .team .about_main .abt_bottom ul h4 {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-size: 18px;
   padding-bottom: 15px;
 }
 
 .team .about_main .abt_bottom ul li::before {
   content: "\2022";
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -1775,7 +1764,7 @@ template {
 .team .team_warapper .team_heading h5 {
   font-size: 16px;
   font-weight: 700;
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 @media screen and (max-width: 768px) {
@@ -1872,8 +1861,8 @@ template {
 }
 
 .about_main .wrapper .abt_left .tab_area nav .nav-tabs .nav-link.active {
-  color: var(--autofly-orange) !important;
-  border-bottom-color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
+  border-bottom-color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .about_main .wrapper .abt_left .tab_area .tab-content .tab-pane b {
@@ -1885,7 +1874,7 @@ template {
   font-weight: 400;
   font-size: 14px;
   line-height: 35px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
   margin-bottom: 20px;
 }
 
@@ -1896,7 +1885,7 @@ template {
 .about_main .wrapper .abt_right .year {
   position: absolute;
   bottom: -50px;
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   color: var(--white-color);
   border-radius: 5px;
   height: 150px;
@@ -1945,11 +1934,11 @@ template {
 }
 
 .about_main .wrapper .deals .media:hover {
-  border-color: var(--autofly-orange);
+  border-color: var(--o-color-secondary, #EB583D);
 }
 
 .about_main .wrapper .deals .media:hover h5 {
-  color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .about_main .wrapper .deals .media:hover img {
@@ -1965,7 +1954,7 @@ template {
 
 .about_main .wrapper .deals .media .media-body p {
   font-size: 14px;
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
   line-height: 30px;
 }
 
@@ -1978,7 +1967,7 @@ template {
   font-weight: 400;
   font-size: 14px;
   line-height: 35px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .about_main .wrapper .skills .skill_right {
@@ -2052,7 +2041,7 @@ template {
 }
 
 .about_main .wrapper .tech .wrapper .img_wrapper .tech_info .wrapper_t p {
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
   font-size: 16px;
   margin-bottom: 10px !important;
   text-transform: uppercase;

@@ -10,7 +10,7 @@ publicWidget.registry.latestBlog = animations.Animation.extend({
     async start () {
         const data = await rpc('/blog_snippet')
         if(data) {
-            this.$target.empty().append(renderToElement('theme_autofly.blog_snippet', {
+            this.$target.empty().append(renderToElement('theme_arc.blog_snippet', {
                 blog_data: data,
                 slug: this.slug
             }))

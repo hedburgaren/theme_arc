@@ -9,7 +9,7 @@ publicWidget.registry.testimonial = animations.Animation.extend({
     selector: '.testimonial_carousel',
     async start () {
         const data = await rpc('/get_testimonial');
-        this.$target.empty().append(renderToElement('theme_autofly.testimonial_snippet', { data, range: this.calculateRange }));
+        this.$target.empty().append(renderToElement('theme_arc.testimonial_snippet', { data, range: this.calculateRange }));
     },
     calculateRange (range) {
        return Array.from({length: range}, (_, index) => index + 1);

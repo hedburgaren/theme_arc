@@ -31,25 +31,25 @@ class WebsiteAutoFly(http.Controller):
                 csrf=False)
     def about_page(self):
         """Render the about page."""
-        return request.render('theme_autofly.about_page')
+        return request.render('theme_arc.about_page')
 
     @http.route('/portfolio', website=True, type='http', auth='public',
                 csrf=False)
     def portfolio_page(self):
         """Render the portfolio page."""
-        return request.render('theme_autofly.portfolio_page')
+        return request.render('theme_arc.portfolio_page')
 
     @http.route('/team', website=True, type='http', auth='public',
                 csrf=False)
     def team_page(self):
         """Render the team page."""
-        return request.render('theme_autofly.team_page')
+        return request.render('theme_arc.team_page')
 
     @http.route('/service', website=True, type='http', auth='public',
                 csrf=False)
     def service_page(self):
         """Render the service page."""
-        return request.render('theme_autofly.service_page')
+        return request.render('theme_arc.service_page')
 
     @http.route('/blog_snippet', auth="public", type='json')
     def latest_blog(self):
@@ -83,7 +83,7 @@ class WebsiteAutoFly(http.Controller):
             'email': kwargs.get('email'),
             'description': kwargs.get('text')
         })
-        return request.render('theme_autofly.service_page')
+        return request.render('theme_arc.service_page')
 
     @http.route('/cars-search', website=True, type='http', auth='public',
                 csrf=False)
@@ -104,7 +104,7 @@ class WebsiteAutoFly(http.Controller):
         if kwargs.get('car-location'):
             domain.append(('location', 'ilike', kwargs.get('car-location')))
         result = request.env['product.template'].sudo().search(domain)
-        return request.render('theme_autofly.specific_car',
+        return request.render('theme_arc.specific_car',
                               qcontext={'hot_deals': result})
 
     @http.route('/get_product_tab', auth="public", type='json')
@@ -113,7 +113,7 @@ class WebsiteAutoFly(http.Controller):
         hot_deals = request.env['product.template'].sudo().search([
             ('website_published', '=', True),
             ('popular_product', '=', True)])
-        response = http.Response(template='theme_autofly.popular_modal',
+        response = http.Response(template='theme_arc.popular_modal',
                                  qcontext={'hot_deals': hot_deals})
         return response.render()
 
@@ -123,7 +123,7 @@ class WebsiteAutoFly(http.Controller):
         hot_deals = request.env['car.types'].sudo().search([],
                                                            order='id desc',
                                                            limit=6)
-        response = http.Response(template='theme_autofly.autofly_find_car',
+        response = http.Response(template='theme_arc.autofly_find_car',
                                  qcontext={'hot_deals': hot_deals})
         return response.render()
 
@@ -142,7 +142,7 @@ class WebsiteAutoFly(http.Controller):
         hot_deals = request.env['product.template'].sudo().search([
             ('website_published', '=', True),
             ('detailed_type', '=', 'service')])
-        response = http.Response(template='theme_autofly.service_products',
+        response = http.Response(template='theme_arc.service_products',
                                  qcontext={'hot_deals': hot_deals})
         return response.render()
 
@@ -152,7 +152,7 @@ class WebsiteAutoFly(http.Controller):
         hot_deals = request.env['car.garage'].sudo().search([])
         car_types = request.env['car.types'].sudo().search([])
         values = {'hot_deals': hot_deals, 'car_types': car_types}
-        response = http.Response(template='theme_autofly.portfolio_garage_page',
+        response = http.Response(template='theme_arc.portfolio_garage_page',
                                  qcontext=values)
         return response.render()
 
@@ -160,6 +160,6 @@ class WebsiteAutoFly(http.Controller):
     def get_all_type(self):
         """Controller used to fetch car types."""
         hot_deals = request.env['car.types'].sudo().search([])
-        response = http.Response(template='theme_autofly.portfolio_type_page',
+        response = http.Response(template='theme_arc.portfolio_type_page',
                                  qcontext={'hot_deals': hot_deals})
         return response.render()

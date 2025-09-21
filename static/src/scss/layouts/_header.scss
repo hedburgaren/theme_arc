@@ -27,7 +27,7 @@
               text-decoration: none;
 
               svg path {
-                fill: var(--autofly-orange);
+                fill: var(--o-color-secondary, #EB583D);
                 transition: all ease 0.3s;
               }
             }
@@ -45,12 +45,12 @@
             }
 
             span {
-              color: var(--grey-2);
+              color: var(--o-color-text-muted, #606060);
               font-weight: 400;
 
               &:hover {
 
-                color: var(--grey-3);
+                color: var(--o-color-text, #747474);
               }
             }
           }
@@ -75,12 +75,12 @@
         li {
           a {
 
-            color: var(--grey-2);
+            color: var(--o-color-text-muted, #606060);
             font-weight: 400;
 
             &:hover {
               text-decoration: none;
-              color: var(--grey-3);
+              color: var(--o-color-text, #747474);
             }
 
           }
@@ -90,7 +90,7 @@
             padding-left: 8px;
             border: 1px solid;
             border-color: transparent;
-            border-left-color: var(--grey-2) !important;
+            border-left-color: var(--o-color-text-muted, #606060) !important;
           }
         }
       }
@@ -145,14 +145,14 @@
           }
 
           .nav-link {
-            color: var(--grey-1);
+            color: var(--o-color-text-muted, #8b8b8b);
             font-size: 14px;
             margin: 0px 15px;
             font-weight: 400;
             text-transform: uppercase;
 
             &:hover {
-              color: var(--autofly-red);
+              color: var(--o-color-primary, #D10202);
             }
 
             // @media screen and (max-width:1200px) {
@@ -178,11 +178,11 @@
             margin-right: 15px;
 &:hover{
   svg path {
-    fill:var(--autofly-red);
+    fill:var(--o-color-primary, #D10202);
     transition: all ease 0.3s;
   }
   svg line {
-    stroke:var(--autofly-red);
+    stroke:var(--o-color-primary, #D10202);
     transition: all ease 0.3s;
   }
 }
@@ -329,7 +329,7 @@
 
 .navbar-toggler span {
   display: block;
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   height: 3px;
   width: 25px;
   margin-top: 5px;

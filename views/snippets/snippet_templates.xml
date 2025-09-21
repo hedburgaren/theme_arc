@@ -4,25 +4,25 @@
               name="Autofly banner">
         <xpath expr="//snippets[@id='snippet_groups']"
                position="inside">
-            <t t-snippet="theme_autofly.banner"
-               t-thumbnail="/theme_autofly/static/description/img/banner-thumb.png"/>
-            <t t-snippet="theme_autofly.autofly_search"
-               t-thumbnail="/theme_autofly/static/description/img/banner-thumb.png"/>
-            <t t-snippet="theme_autofly.autofly_partners"
-               t-thumbnail="/theme_autofly/static/description/img/banner-thumb.png"/>
-            <t t-snippet="theme_autofly.choose_us"
-               t-thumbnail="/theme_autofly/static/description/img/banner-thumb.png"/>
-            <t t-snippet="theme_autofly.client_testimonial"
-               t-thumbnail="/theme_autofly/static/description/img/banner-thumb.png"/>
-            <t t-snippet="theme_autofly.autofly_blog"
-               t-thumbnail="/theme_autofly/static/description/img/banner-thumb.png"/>
+            <t t-snippet="theme_arc.banner"
+               t-thumbnail="/theme_arc/static/description/img/banner-thumb.png"/>
+            <t t-snippet="theme_arc.autofly_search"
+               t-thumbnail="/theme_arc/static/description/img/banner-thumb.png"/>
+            <t t-snippet="theme_arc.autofly_partners"
+               t-thumbnail="/theme_arc/static/description/img/banner-thumb.png"/>
+            <t t-snippet="theme_arc.choose_us"
+               t-thumbnail="/theme_arc/static/description/img/banner-thumb.png"/>
+            <t t-snippet="theme_arc.client_testimonial"
+               t-thumbnail="/theme_arc/static/description/img/banner-thumb.png"/>
+            <t t-snippet="theme_arc.autofly_blog"
+               t-thumbnail="/theme_arc/static/description/img/banner-thumb.png"/>
         </xpath>
         <xpath expr="//snippets[@id='snippet_groups']"
                position="inside">
-            <t t-snippet="theme_autofly.find_car_snippet"
-               t-thumbnail="/theme_autofly/static/description/img/banner-thumb.png"/>
-            <t t-snippet="theme_autofly.product_tab_snippet"
-               t-thumbnail="/theme_autofly/static/description/img/banner-thumb.png"/>
+            <t t-snippet="theme_arc.find_car_snippet"
+               t-thumbnail="/theme_arc/static/description/img/banner-thumb.png"/>
+            <t t-snippet="theme_arc.product_tab_snippet"
+               t-thumbnail="/theme_arc/static/description/img/banner-thumb.png"/>
         </xpath>
     </template>
 </odoo>

@@ -1,18 +1,8 @@
 :root {
-  --white-color: #ffff;
-  --off-white:#F8F8F8;
-  --black-color: #000000;
-  --autofly-red: #D10202;
-  --autofly-text-red: #D10205;
-  --autofly-orange:#EB583D;
-  --grey-1:#8b8b8b;
-  --grey-2:#606060;
-  --grey-3:#747474;
-  --border-color:#E3E2DF;
-  --border-color-2:#D7D4D4;
-  --button-s-bg: #eb583d1a;
-  --heading-color:#282828;
-  --section-bg:#252525;
+  /* Removing hard-coded colors and just setting basic stuff. */
+  --white-color: #fff;
+  --black-color: #000;
+  --off-white: #F8F8F8;
 }
 
 *:focus {
@@ -48,14 +38,13 @@ html.sr .load-hidden {
 }
 
 *::selection {
-  color: #f3ebee;
-  background-color: black;
+  color: var(--o-color-background, #fff);
+  background-color: var(--o-color-secondary, #e0a800);
 }
 
-*a,
-a:visited {
-  color: #990000;
-  text-decoration: none;
+a:hover, a:focus {
+  color: var(--o-color-secondary, #e0a800);
+  text-decoration: underline;
 }
 
 .oi {
@@ -65,7 +54,7 @@ a:visited {
 body {
   position: relative;
   font-family: font-default !important;
-  background-color: #F5F5F5;
+  background-color: var(--o-color-background, #F5F5F5);
 }
 
 .affix {
@@ -133,7 +122,7 @@ body {
 .common_heading {
   font-size: 32px;
   font-weight: 800;
-  color: var(--heading-color);
+  color: var(--o-color-text, #232022);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 15px;
@@ -144,7 +133,7 @@ body {
 }
 
 .common_p {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
@@ -155,7 +144,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 35px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #232022);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -513,18 +502,18 @@ template {
   text-decoration: none;
   padding: 10px 25px;
   position: relative;
-  background-color: var(--autofly-text-red) !important;
-  color: #232022 !important;
+  background-color: var(--o-color-primary, #006e5a) !important;
+  color: var(--o-color-btn-text, #fff) !important;
   transition: all 0.3s;
 }
 
-.btn-primary: hover {
-  color: var(--white-color) !important;
-  background-color: var(--autofly-text-red) !important;
+.btn-primary:hover {
+  color: var(--o-color-btn-text, #fff) !important;
+  background-color: var(--o-color-secondary, #e0a800) !important;
 }
 
 .btn-cart {
-  color: var(--grey-1) !important;
+  color: var(--o-color-menu-text, #232022) !important;
 }
 
 
@@ -535,27 +524,26 @@ template {
   text-decoration: none;
   padding: 10px 25px;
   position: relative;
-  background-color: var(--button-s-bg) !important;
-  color: var(--autofly-text-red) !important;
+  background-color: var(--o-color-secondary, #e0a800) !important;
+  color: var(--o-color-btn-text, #fff) !important;
   transition: all 0.3s;
 }
 
 .btn-secondary:hover {
-    color: var(--white-color) !important;
-    background-color: var(--autofly-text-red) !important;
+  color: var(--o-color-btn-text, #fff) !important;
+  background-color: var(--o-color-primary, #006e5a) !important;
 }
 
 .btn-card {
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 16px; /* (du satte både 18px och 16px – 16px vinner) */
   font-weight: 500;
   text-decoration: none;
   padding: 10px 25px;
   position: relative;
-  background-color: var(--autofly-orange);
-  color: var(--white-color) !important;
+  background-color: var(--o-color-accent, #EB583D);
+  color: var(--o-color-btn-text, #fff) !important;
   transition: all 0.3s;
-  font-size: 16px;
 }
 
 .banner {
@@ -593,7 +581,7 @@ template {
 }
 
 .banner .banner_content .details .banner_heading {
-  color: var(--white-color);
+  color: var(--white-color, #fff);
   font-size: 60px;
   font-weight: 900;
 }
@@ -606,7 +594,7 @@ template {
 }
 
 .banner .banner_content .details p {
-  color: var(--white-color);
+  color: var(--white-color, #fff);
   font-size: 18px;
 }
 
@@ -646,7 +634,7 @@ template {
 }
 
 .banner_sub .banner_content .breadcrumb .breadcrumb-item {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary);
 }
 
 .banner_sub .banner_content .breadcrumb .breadcrumb-item:first-child::before {
@@ -661,12 +649,12 @@ template {
 }
 
 .banner_sub .banner_content .breadcrumb .breadcrumb-item a {
-  color: var(--white-color);
+  color: #fff;
   text-decoration: none;
 }
 
 .banner_sub .banner_content .breadcrumb .breadcrumb-item a:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary);
 }
 
 .banner_contact {
@@ -704,7 +692,7 @@ template {
 }
 
 .banner_service .details .banner_heading {
-  color: var(--white-color);
+  color: #fff;
   font-size: 60px;
   font-weight: 900;
   text-transform: uppercase;
@@ -718,7 +706,7 @@ template {
 }
 
 .banner_service .details p {
-  color: var(--white-color);
+  color: #fff;
   font-size: 18px;
 }
 
@@ -742,7 +730,7 @@ template {
 
 .header_modern_light .top_bar {
   border: 1px solid transparent;
-  border-bottom-color: var(--border-color);
+  border-bottom-color: var(--o-color-border, #E3E2DF);
   padding: 15px 0;
 }
 
@@ -765,7 +753,7 @@ template {
 }
 
 .header_modern_light .top_bar .top_bar_left ul li a:hover svg path {
-  fill: var(--autofly-orange);
+  fill: var(--o-color-secondary, #EB583D);
   transition: all ease 0.3s;
 }
 
@@ -774,12 +762,12 @@ template {
 }
 
 .header_modern_light .top_bar .top_bar_left ul li a span {
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
   font-weight: 400;
 }
 
 .header_modern_light .top_bar .top_bar_left ul li a span:hover {
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .header_modern_light .top_bar .top_bar_left ul li:last-child {
@@ -800,13 +788,13 @@ template {
 }
 
 .header_modern_light .top_bar .top_bar_right ul li a {
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
   font-weight: 400;
 }
 
 .header_modern_light .top_bar .top_bar_right ul li a:hover {
   text-decoration: none;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .header_modern_light .top_bar .top_bar_right ul li:last-child {
@@ -814,12 +802,12 @@ template {
   padding-left: 8px;
   border: 1px solid;
   border-color: transparent;
-  border-left-color: var(--grey-2) !important;
+  border-left-color: var(--o-color-text-muted, #606060) !important;
 }
 
 .header_modern_light .navigation {
   transition: background-color 0.4s ease-out;
-  background-color: var(--white-color);
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
@@ -864,7 +852,7 @@ template {
 
 @media screen and (max-width: 1200px) {
   .header_modern_light .navigation .navbar .navbar-collapse {
-    background-color: var(--white-color);
+    background-color: #fff;
     padding: 15px 15px;
   }
   .header_modern_light .navigation .navbar .navbar-brand span img {
@@ -911,7 +899,7 @@ template {
 
 
 .header_modern_light .navigation .navbar .navbar-nav .nav-item .active {
-  color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .header_modern_light .navigation .navbar form {
@@ -925,17 +913,17 @@ template {
 }
 
 .header_modern_light .navigation .navbar form span a {
-  color: var(--white-color);
+  color: #fff;
   margin-right: 15px;
 }
 
 .header_modern_light .navigation .navbar form span a:hover svg path {
-  fill: var(--autofly-red);
+  fill: var(--o-color-primary, #D10202);
   transition: all ease 0.3s;
 }
 
 .header_modern_light .navigation .navbar form span a:hover svg line {
-  stroke: var(--autofly-red);
+  stroke: var(--o-color-primary, #D10202);
   transition: all ease 0.3s;
 }
 
@@ -1034,7 +1022,7 @@ template {
 
 .navbar-toggler span {
   display: block;
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   height: 3px;
   width: 25px;
   margin-top: 5px;
@@ -1068,7 +1056,7 @@ template {
   background-color: transparent;
   border: 1px solid transparent;
     border-top-color: transparent;
-  border-top-color: var(--border-color);
+  border-top-color: var(--o-color-border, #E3E2DF);
 }
 
 @media screen and (max-width: 768px) {
@@ -1082,7 +1070,7 @@ template {
 }
 
 .footer .wrapper .footer_content .footer_heading {
-  color: var(--white-color);
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -1094,7 +1082,7 @@ template {
 }
 
 .footer .wrapper .footer_content .footer_text {
-  color: var(--white-color);
+  color: #fff;
   font-size: 16px;
   line-height: 35px;
 }
@@ -1108,12 +1096,12 @@ template {
 }
 
 .footer .wrapper .footer_content .footer_link li a {
-  color: var(--white-color);
+  color: #fff;
   font-size: 16px;
 }
 
 .footer .wrapper .footer_content .footer_link li a:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   text-decoration: none;
 }
 
@@ -1125,7 +1113,7 @@ template {
   margin-top: 20px;
   padding: 30px 20px;
   border-radius: 5px;
-  background-color: var(--white-color);
+  background-color: #fff;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 }
 
@@ -1138,12 +1126,12 @@ template {
 .search .search_bar .brand p {
   margin-bottom: 5px;
   padding-left: 6px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .search .search_bar .brand .b_name {
   font-size: 16px;
-  color: var(--autofly-text-red);
+  color: var(--o-color-primary, #D10205);
 }
 
 .search .search_bar .spec_c {
@@ -1154,13 +1142,13 @@ template {
 
 .search .search_bar .spec_c .spec {
   font-size: 10px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .search .search_bar label {
   margin-bottom: 5px;
   font-size: 12px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .no_search {
@@ -1221,7 +1209,7 @@ template {
 
 .find_car .wrapper .f_c_info {
   text-align: center;
-  background-color: var(--white-color);
+  background-color: #fff;
   padding: 30px 0;
   border-radius: 5px;
   margin: 0px 15px;
@@ -1245,13 +1233,13 @@ template {
 .find_car .wrapper .f_c_info .car_name {
   font-size: 18px;
   font-weight: 700;
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
   margin-bottom: 5px;
 }
 
 .find_car .wrapper .f_c_info .count {
   font-size: 16px;
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
 }
 
 .find_car .wrapper .f_c_info:hover {
@@ -1259,11 +1247,11 @@ template {
 }
 
 .find_car .wrapper .f_c_info:hover .car_name {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 .find_car .wrapper .f_c_info:hover .count {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 .partners {
@@ -1311,7 +1299,7 @@ template {
 }
 
 .Popular .wrapper .product_card {
-  background-color: var(--white-color);
+  background-color: #fff;
   padding: 5px 25px;
   transition: 0.5s;
   margin-bottom: 30px;
@@ -1379,7 +1367,7 @@ template {
 
 .Popular .wrapper .product_card a .card_bottom .c_b_wrapper span {
   font-size: 14px;
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
 }
 
 .Popular .wrapper .product_card .p_c_bottom {
@@ -1423,12 +1411,12 @@ template {
   font-weight: 400;
   font-size: 22px;
   line-height: 35px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
   margin-bottom: 20px;
 }
 
 .choose .wrapper .choose_left .c_details h6 {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-size: 22px;
   text-transform: capitalize;
   font-weight: 700;
@@ -1468,7 +1456,7 @@ template {
 }
 
 .testimonial .s_quotes_carousel .wrapper .slider_wrapper .owl-carousel .item .item_wrapper {
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   border-radius: 8px;
   padding: 25px;
 }
@@ -1485,7 +1473,7 @@ template {
 }
 
 .testimonial .s_quotes_carousel .wrapper .slider_wrapper .owl-carousel .item .item_wrapper .media .media-body {
-    color: var(--white-color);
+    color: #fff;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -1494,7 +1482,7 @@ template {
 }
 
 .testimonial .s_quotes_carousel .wrapper .slider_wrapper .owl-carousel .item .item_wrapper .media .media-body h5 {
-  color: var(--white-color);
+  color: #fff;
   font-weight: 700;
   font-size: 20px !important;
   letter-spacing: 0.1em;
@@ -1516,7 +1504,7 @@ template {
 }
 
 .testimonial .s_quotes_carousel .wrapper .slider_wrapper .owl-carousel .item .item_wrapper .rating span {
-  color: var(--white-color);
+  color: #fff;
   font-size: 14px;
   font-weight: 300;
 }
@@ -1558,7 +1546,7 @@ template {
 
 .owl-carousel .owl-nav.disabled button.owl-prev {
   background-color: transparent;
-  border: 2px solid var(--white-color);
+  border: 2px solid #fff;
   position: relative;
   height: 37px;
   width: 37px;
@@ -1566,7 +1554,7 @@ template {
 
 .owl-carousel .owl-nav.disabled button.owl-prev span {
   position: absolute;
-  color: var(--white-color);
+  color: #fff;
   font-size: 37px;
   display: block;
   top: -8px;
@@ -1577,7 +1565,7 @@ template {
   content: " ";
   height: 3px;
   width: 15px;
-  background-color: var(--white-color);
+  background-color: #fff;
   display: block;
   top: 22px;
   position: absolute;
@@ -1586,7 +1574,7 @@ template {
 
 .owl-carousel .owl-nav.disabled button.owl-next {
   background-color: transparent;
-  border: 2px solid var(--white-color);
+  border: 2px solid #fff;
   position: relative;
   height: 37px;
   width: 37px;
@@ -1594,7 +1582,7 @@ template {
 
 .owl-carousel .owl-nav.disabled button.owl-next span {
   position: absolute;
-  color: var(--white-color);
+  color: #fff;
   font-size: 37px;
   display: block;
   top: -9px;
@@ -1605,7 +1593,7 @@ template {
   content: " ";
   height: 3px;
   width: 15px;
-  background-color: var(--white-color);
+  background-color: #fff;
   display: block;
   top: 22px;
   position: absolute;
@@ -1638,7 +1626,7 @@ template {
 }
 
 .blog_index .wrapper .blog_wrapper .card .b_img .tag {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   position: absolute;
   border-radius: 3px;
   font-weight: 400;
@@ -1669,7 +1657,7 @@ template {
 
 .blog_index .wrapper .blog_wrapper .card .card-body .card-text {
   font-size: 16px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .blog_index .wrapper .blog_wrapper .card .card-body .read_more {
@@ -1679,7 +1667,7 @@ template {
 }
 
 .blog_index .wrapper .blog_wrapper .card .card-body .read_more:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   text-decoration: none;
 }
 
@@ -1689,7 +1677,7 @@ template {
 }
 
 .blog_index .wrapper .blog_wrapper .card .card-body .read_more:hover svg path {
-  fill: var(--autofly-orange);
+  fill: var(--o-color-secondary, #EB583D);
   transition: all ease 0.3s;
   transition: 0.3s;
 }
@@ -1709,7 +1697,7 @@ template {
 }
 
 .contact .contact_left .name p {
-  color: var(--grey-2);
+  color: var(--o-color-text-muted, #606060);
 }
 
 .contact .contact_left .name .contact-form {
@@ -1780,7 +1768,7 @@ template {
 }
 
 .contact .contact_right .phone a:hover {
-  color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .map .mapouter {
@@ -1820,7 +1808,7 @@ template {
 
 .blog_main .wrapper .blog_wrapper .card:hover {
   transform: translate(0, -10px);
-  background-color: var(--white-color);
+  background-color: #fff;
   box-shadow: -1px 2px 17px 4pxrgba 226, 226, 226, 0.715 2;
 }
 
@@ -1834,7 +1822,7 @@ template {
 }
 
 .blog_main .wrapper .blog_wrapper .card .b_img .tag {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   position: absolute;
   border-radius: 3px;
   font-weight: 400;
@@ -1866,7 +1854,7 @@ template {
 
 .blog_main .wrapper .blog_wrapper .card .card-body .card-text {
   font-size: 16px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .blog_main .wrapper .blog_wrapper .card .card-body .read_more {
@@ -1875,12 +1863,12 @@ template {
 }
 
 .blog_main .wrapper .blog_wrapper .card .card-body .read_more:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   text-decoration: none;
 }
 
 .blog_main .wrapper .blog_wrapper .card .card-body .read_more:hover svg path {
-  fill: var(--autofly-orange);
+  fill: var(--o-color-secondary, #EB583D);
   transition: all ease 0.3s;
 }
 
@@ -1905,17 +1893,17 @@ template {
   display: block;
   padding: 5px 10px;
   border-radius: 5px;
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-size: 16px;
 }
 
 .blog_main .pagination-area ul li a.active {
-  border: 1px solid var(--autofly-orange);
+  border: 1px solid var(--o-color-secondary, #EB583D);
 }
 
 .blog_main .pagination-area ul li a:hover {
   color: #fff;
-  background-color: var(--autofly-orange);
+  background-color: var(--o-color-secondary, #EB583D);
   text-decoration: none;
 }
 
@@ -1943,7 +1931,7 @@ template {
 .team .about_main .wrapper_a .who {
   font-size: 28px;
   font-weight: 700;
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   letter-spacing: 1px;
 }
 
@@ -1979,14 +1967,14 @@ template {
 }
 
 .team .about_main .abt_bottom ul h4 {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-size: 18px;
   padding-bottom: 15px;
 }
 
 .team .about_main .abt_bottom ul li::before {
   content: "\2022";
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -2018,7 +2006,7 @@ template {
 .team .team_warapper .team_heading h5 {
   font-size: 16px;
   font-weight: 700;
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 @media screen and (max-width: 768px) {
@@ -2121,8 +2109,8 @@ template {
 }
 
 .about_main .wrapper .abt_left .tab_area nav .nav-tabs .nav-link.active {
-  color: var(--autofly-orange) !important;
-  border-bottom-color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
+  border-bottom-color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .about_main .wrapper .abt_left .tab_area .tab-content .tab-pane b {
@@ -2134,7 +2122,7 @@ template {
   font-weight: 400;
   font-size: 14px;
   line-height: 35px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
   margin-bottom: 20px;
 }
 
@@ -2151,8 +2139,8 @@ template {
 .about_main .wrapper .abt_right .year {
   position: absolute;
   bottom: -50px;
-  background-color: var(--autofly-orange);
-  color: var(--white-color);
+  background-color: var(--o-color-secondary, #EB583D);
+  color: #fff;
   border-radius: 5px;
   height: 150px;
   width: 160px;
@@ -2187,7 +2175,7 @@ template {
 }
 
 .about_main .wrapper .deals .media {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--o-color-border, #E3E2DF);
   border-radius: 5px;
   padding: 15px 15px;
   padding-top: 20px;
@@ -2206,11 +2194,11 @@ template {
 }
 
 .about_main .wrapper .deals .media:hover {
-  border-color: var(--autofly-orange);
+  border-color: var(--o-color-secondary, #EB583D);
 }
 
 .about_main .wrapper .deals .media:hover h5 {
-  color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .about_main .wrapper .deals .media:hover img {
@@ -2233,7 +2221,7 @@ template {
 
 .about_main .wrapper .deals .media .media-body p {
   font-size: 14px;
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
   line-height: 30px;
 }
 
@@ -2247,7 +2235,7 @@ template {
   font-weight: 400;
   font-size: 14px;
   line-height: 35px;
-  color: var(--grey-3);
+  color: var(--o-color-text, #747474);
 }
 
 .about_main .wrapper .skills .skill_right {
@@ -2328,7 +2316,7 @@ template {
 }
 
 .about_main .wrapper .tech .wrapper_t .img_wrapper .tech_info .wrapper_t p {
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
   font-size: 16px;
   margin-bottom: 10px !important;
   text-transform: uppercase;
@@ -2357,7 +2345,7 @@ template {
   background-image: url(.././assets/about_page/city.jpg);
   background-position: center;
   background-size: cover;
-  color: var(--white-color);
+  color: #fff;
   padding: 50px;
   text-transform: uppercase;
 }
@@ -2418,7 +2406,7 @@ template {
   height: 61px;
   width: 61px;
   border-radius: 50%;
-  border: 2px solid var(--grey-1);
+  border: 2px solid var(--o-color-text-muted, #8b8b8b);
   margin: auto;
   display: flex;
   align-items: center;
@@ -2428,7 +2416,7 @@ template {
 }
 
 .service .wrapper_s .service_info .card .card-body .img_wrapper .icon_wrapper {
-  background-color: var(--grey-1);
+  background-color: var(--o-color-text-muted, #8b8b8b);
   height: 51px;
   border-radius: 50%;
   width: 51px;
@@ -2453,24 +2441,24 @@ template {
 .service .wrapper_s .service_info .card .card-body .card-text {
   font-size: 16px;
   font-weight: 400;
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
   line-height: 35px;
   text-align: center;
 }
 
 .service .wrapper_s .service_info .card:hover {
-  background-color: var(--white-color);
+  background-color: #fff;
   border: 1px solid transparent;
-  border-bottom-color: var(--autofly-orange) !important;
+  border-bottom-color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .service .wrapper_s .service_info .card:hover .img_wrapper {
-  border-color: var(--autofly-orange);
+  border-color: var(--o-color-secondary, #EB583D);
   transition: 0.2s;
 }
 
 .service .wrapper_s .service_info .card:hover .icon_wrapper {
-  background-color: var(--autofly-orange) !important;
+  background-color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .service .wrapper_s .counter_main {
@@ -2536,7 +2524,7 @@ template {
   position: relative;
   border: 1px solid white;
   border-color: transparent;
-  border-right-color: var(--white-color);
+  border-right-color: #fff;
 }
 
 .service .wrapper_s .counter_main .overlay #counter-box:last-child {
@@ -2562,7 +2550,7 @@ template {
 
 .service .wrapper_s .counter_main .overlay #counter-box .c_icon i {
   font-size: 50px;
-  color: var(--white-color);
+  color: #fff;
 }
 
 .service .wrapper_s .counter_main .overlay #counter-box p {
@@ -2574,7 +2562,7 @@ template {
 .service .wrapper_s .counter_main .overlay .counter {
   font-size: 48px;
   font-weight: 700;
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 .service .product_service {
@@ -2583,7 +2571,7 @@ template {
 }
 
 .service .product_service .wrapper .product_card {
-  background-color: var(--white-color);
+  background-color: #fff;
   padding: 5px 25px;
   transition: 0.5s;
 }
@@ -2637,9 +2625,9 @@ template {
 
 .service .product_service .wrapper .product_card a .info {
   font-size: 16px;
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
   border: 1px solid transparent;
-  border-bottom-color: var(--border-color);
+  border-bottom-color: var(--o-color-border, #E3E2DF);
   padding-bottom: 10px;
   padding-top: 15px;
 }
@@ -2662,10 +2650,10 @@ template {
   font-weight: 700;
 }
 .o_wsale_product_btn .btn:hover {
-  background-color: var(--autofly-red) !important;
+  background-color: var(--o-color-primary, #D10202) !important;
 }
 .btn:hover {
-  background-color: var(--autofly-red) !important;
+  background-color: var(--o-color-primary, #D10202) !important;
 }
 
 .service .schedule {
@@ -2757,7 +2745,7 @@ template {
 }
 
 .service .question .que p {
-  color: var(--grey-1);
+  color: var(--o-color-text-muted, #8b8b8b);
   font-size: 20px;
   margin-bottom: 5px !important;
 }
@@ -2813,7 +2801,7 @@ template {
 
 .portfolio .wrapper_p .portfolio_disc .pd_left .pd_heading span,
 .portfolio .wrapper_p .portfolio_disc .pd_left span span {
-  color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
 }
 
 .portfolio .wrapper_p .portfolio_disc .pd_right {
@@ -2826,7 +2814,7 @@ template {
 }
 
 .portfolio .wrapper_p .portfolio_disc .pd_right .year .yr {
-  color: var(--autofly-orange) !important;
+  color: var(--o-color-secondary, #EB583D) !important;
   font-weight: 700;
   font-size: 6em;
   line-height: 1em;
@@ -2888,7 +2876,7 @@ template {
 }
 
 .portfolio .wrapper_p .future .future_content .future_card a .img_caption:hover {
-  color: var(--autofly-orange);
+  color: var(--o-color-secondary, #EB583D);
 }
 
 .portfolio .wrapper_p .future .future_content .future_card a:hover {
@@ -2931,7 +2919,7 @@ template {
   font-size: 48px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: #fff;
   word-wrap: break-word;
 }
 
@@ -2948,7 +2936,7 @@ template {
 }
 
 .carousel-control-next-icon {
-    background-image: url("/theme_autofly/static/src/assets/testimonial/arrow11.svg") !important;
+    background-image: url("/theme_arc/static/src/assets/testimonial/arrow11.svg") !important;
 }
 
 .carousel-control-next-icon::before {
@@ -2958,7 +2946,7 @@ template {
 }
 
 .carousel-control-prev-icon {
-    background-image: url("/theme_autofly/static/src/assets/testimonial/arrow_4.svg") !important;
+    background-image: url("/theme_arc/static/src/assets/testimonial/arrow_4.svg") !important;
 
 }
 
@@ -2996,7 +2984,7 @@ bottom: 0 !important;
 }
 
 .blog_index .wrapper .blog_wrapper .card .b_img .tag {
-    color: var(--autofly-orange);
+    color: var(--o-color-secondary, #EB583D);
     position: absolute;
     border-radius: 3px;
     font-weight: 400;
@@ -3043,7 +3031,7 @@ right:10% !important;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-color: transparent;
-    border-bottom-color: var(--border-color);
+    border-bottom-color: var(--o-color-border, #E3E2DF);
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -3059,22 +3047,22 @@ form label {
 }
 
 .form-check-input:checked {
-    background-color: var(--autofly-text-red);
-    border-color: var(--autofly-text-red);
+    background-color: var(--o-color-primary, #D10205);
+    border-color: var(--o-color-primary, #D10205);
 }
 
 .css_attribute_color.active {
-    border: 5px solid var(--autofly-text-red);
+    border: 5px solid var(--o-color-primary, #D10205);
 }
 
 .btn-link {
-    color: var(--autofly-text-red);
+    color: var(--o-color-primary, #D10205);
 }
 
 
 
 .text-bg-primary {
-     background-color: var(--autofly-text-red) !important;
+     background-color: var(--o-color-primary, #D10205) !important;
 }
 
 .o_cart_product a, .page-link {
@@ -3088,6 +3076,6 @@ form label {
     color: #ffc107 !important;
 }
 .badge.bg-primary {
-    background: var(--autofly-text-red) !important;
-    border: var(--autofly-text-red) !important;
+    background: var(--o-color-primary, #D10205) !important;
+    border: var(--o-color-primary, #D10205) !important;
 }

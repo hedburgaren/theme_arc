@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates>
     <!--    dynamic blog snippet template   -->
-    <t t-name="theme_autofly.blog_snippet">
+    <t t-name="theme_arc.blog_snippet">
         <div class="row">
             <t t-foreach="blog_data" t-as="blog" t-key="blog.id">
                 <div class="col-lg-4 col-md-4 col-12">

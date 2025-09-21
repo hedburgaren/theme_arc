@@ -105,7 +105,7 @@
                                         <div class="future_card">
                                             <a href="#">
                                                 <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 11.png"
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 11.png"
                                                          alt=""/>
                                                 </div>
                                                 <p class="img_caption">
@@ -118,7 +118,7 @@
                                         <div class="future_card">
                                             <a href="#">
                                                 <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 12.png"
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 12.png"
                                                          alt=""/>
                                                 </div>
                                                 <p class="img_caption">
@@ -131,7 +131,7 @@
                                         <div class="future_card">
                                             <a href="#">
                                                 <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 13.png"
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 13.png"
                                                          alt=""/>
                                                 </div>
                                                 <p class="img_caption">
@@ -144,7 +144,7 @@
                                         <div class="future_card">
                                             <a href="#">
                                                 <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 14.png"
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 14.png"
                                                          alt=""/>
                                                 </div>
                                                 <p class="img_caption">
@@ -157,7 +157,7 @@
                                         <div class="future_card">
                                             <a href="#">
                                                 <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 15.png"
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 15.png"
                                                          alt=""/>
                                                 </div>
                                                 <p>
@@ -173,7 +173,7 @@
                                         <div class="future_card">
                                             <a href="#">
                                                 <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 17.png"
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 17.png"
                                                          alt=""/>
                                                 </div>
                                                 <p class="img_caption">
@@ -186,21 +186,7 @@
                                         <div class="future_card">
                                             <a href="#">
                                                 <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 17.png"
-                                                         alt=""/>
-                                                </div>
-
-                                                <p class="img_caption">
-                                                    2024 Lamborghini Revuelto
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="future_card">
-                                            <a href="#">
-                                                <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 18.png"
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 17.png"
                                                          alt=""/>
                                                 </div>
 
@@ -214,7 +200,21 @@
                                         <div class="future_card">
                                             <a href="#">
                                                 <div class="img_wrapper">
-                                                    <img src="/theme_autofly/static/src/assets/portfolio/image 19.png"
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 18.png"
+                                                         alt=""/>
+                                                </div>
+
+                                                <p class="img_caption">
+                                                    2024 Lamborghini Revuelto
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                        <div class="future_card">
+                                            <a href="#">
+                                                <div class="img_wrapper">
+                                                    <img src="/theme_arc/static/src/assets/portfolio/image 19.png"
                                                          alt=""/>
                                                 </div>
                                                 <p class="img_caption">

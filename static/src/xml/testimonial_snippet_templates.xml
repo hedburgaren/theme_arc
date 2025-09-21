@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <templates>
-    <t t-name="theme_autofly.testimonial_snippet">
+    <t t-name="theme_arc.testimonial_snippet">
         <div t-attf-id="myQuoteCarousel{{uniq}}"
              class="s_quotes_carousel s_carousel_default carousel slide o_cc"
              data-bs-interval="10000">

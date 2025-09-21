@@ -184,7 +184,7 @@
                                         </p>
                                     </div>
                                     <div class="img_wrapper">
-                                        <img src="theme_autofly/static/src/assets/about_page/about.jpg"
+                                        <img src="theme_arc/static/src/assets/about_page/about.jpg"
                                              alt=""/>
                                     </div>
                                 </div>
@@ -195,7 +195,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 mb-4">
                                     <div class="media">
                                         <img class="align-self-center mr-3"
-                                             src="theme_autofly/static/src/assets/about_page/deals/owner.jpg"
+                                             src="theme_arc/static/src/assets/about_page/deals/owner.jpg"
                                              alt="Generic placeholder image"
                                              width="100px"/>
                                         <div class="media-body">
@@ -215,7 +215,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 mb-4">
                                     <div class="media">
                                         <img class="align-self-center mr-3"
-                                             src="theme_autofly/static/src/assets/about_page/deals/plan.jpg"
+                                             src="theme_arc/static/src/assets/about_page/deals/plan.jpg"
                                              alt="Generic placeholder image"
                                              width="100px"/>
                                         <div class="media-body">
@@ -231,7 +231,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 mb-4">
                                     <div class="media">
                                         <img class="align-self-center mr-3"
-                                             src="theme_autofly/static/src/assets/about_page/deals/buy.jpg"
+                                             src="theme_arc/static/src/assets/about_page/deals/buy.jpg"
                                              alt="Generic placeholder image"
                                              width="100px"/>
                                         <div class="media-body">
@@ -251,7 +251,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 mb-4">
                                     <div class="media">
                                         <img class="align-self-center mr-3"
-                                             src="theme_autofly/static/src/assets/about_page/deals/hand.jpg"
+                                             src="theme_arc/static/src/assets/about_page/deals/hand.jpg"
                                              alt="Generic placeholder image"
                                              width="100px"/>
                                         <div class="media-body">
@@ -419,7 +419,7 @@
                     <div class="tech">
                         <div class="wrapper_t">
                             <div class="img_wrapper">
-                                <img src="theme_autofly/static/src/assets/about_page/tech/tech (1).jpg"
+                                <img src="theme_arc/static/src/assets/about_page/tech/tech (1).jpg"
                                      alt=""/>
                                 <div class="tech_info scale-up-center">
                                     <div class="wrapper_t">
@@ -431,7 +431,7 @@
                                 </div>
                             </div>
                             <div class="img_wrapper">
-                                <img src="theme_autofly/static/src/assets/about_page/tech/tech (2).jpg"
+                                <img src="theme_arc/static/src/assets/about_page/tech/tech (2).jpg"
                                      alt=""/>
                                 <div class="tech_info scale-up-center">
                                     <div class="wrapper_t">
@@ -443,7 +443,7 @@
                                 </div>
                             </div>
                             <div class="img_wrapper">
-                                <img src="theme_autofly/static/src/assets/about_page/tech/tech (3).jpg"
+                                <img src="theme_arc/static/src/assets/about_page/tech/tech (3).jpg"
                                      alt=""/>
                                 <div class="tech_info scale-up-center">
                                     <div class="wrapper_t">
@@ -455,7 +455,7 @@
                                 </div>
                             </div>
                             <div class="img_wrapper">
-                                <img src="theme_autofly/static/src/assets/about_page/tech/tech (4).jpg"
+                                <img src="theme_arc/static/src/assets/about_page/tech/tech (4).jpg"
                                      alt=""/>
                                 <div class="tech_info scale-up-center">
                                     <div class="wrapper_t">

@@ -14,7 +14,7 @@
                         height: 61px;
                         width: 61px;
                         border-radius: 50%;
-                        border: 2px solid var(--grey-1);
+                        border: 2px solid var(--o-color-text-muted, #8b8b8b);
                         ;
                         margin: auto;
                         display: flex;
@@ -25,7 +25,7 @@
                         margin-bottom: 20px;
                       
                         .icon_wrapper {
-                            background-color: var(--grey-1);
+                            background-color: var(--o-color-text-muted, #8b8b8b);
                             height: 51px;
                             border-radius: 50%;
                             width: 51px;
@@ -49,7 +49,7 @@
                     .card-text {
                         font-size: 18px;
                         font-weight: 400;
-                        color: var(--grey-1);
+                        color: var(--o-color-text-muted, #8b8b8b);
                         line-height: 35px;
                         text-align: center;
                     }
@@ -57,14 +57,14 @@
                 &:hover {
                     background-color: var(--white-color);
                     border: 1px solid transparent;
-                    border-bottom-color: var(--autofly-orange) !important;
+                    border-bottom-color: var(--o-color-secondary, #EB583D) !important;
                     .img_wrapper {
-                        border-color: var(--autofly-orange);
+                        border-color: var(--o-color-secondary, #EB583D);
                         -webkit-transition: 0.2s;
                         transition: 0.2s;
                     }
                     .icon_wrapper {
-                        background-color: var(--autofly-orange) !important;
+                        background-color: var(--o-color-secondary, #EB583D) !important;
                     }
                 }
             }
@@ -143,7 +143,7 @@
                 .counter {
                     font-size: 48px;
                     font-weight: 700;
-                    color: var(--autofly-orange);
+                    color: var(--o-color-secondary, #EB583D);
                 }
             }
         }
@@ -198,7 +198,7 @@
                     }
                     .info {
                         font-size: 16px;
-                        color: var(--grey-1);
+                        color: var(--o-color-text-muted, #8b8b8b);
                         border: 1px solid transparent;
                         border-bottom-color: var(--border-color);
                         padding-bottom: 10px;
@@ -293,7 +293,7 @@
                 }
             }
             p {
-                color: var(--grey-1);
+                color: var(--o-color-text-muted, #8b8b8b);
                 font-size: 20px;
             }
             a {

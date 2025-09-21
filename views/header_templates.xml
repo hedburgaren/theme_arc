@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <!--    Inheriting Header for replacing header  -->
-    <template id="theme_autofly_header" inherit_id="website.layout">
+    <template id="theme_arc_header" inherit_id="website.layout">
         <xpath expr="//header" position="replace">
             <header class="header_modern_light">
                 <section class="navigation fixed-top sticker">

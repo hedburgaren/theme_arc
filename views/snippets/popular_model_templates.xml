@@ -46,21 +46,21 @@
                                         </div>
                                         <div class="card_bottom">
                                             <div class="c_b_wrapper">
-                                                <img src="/theme_autofly/static/src/assets/card_icon/speedometer 1.png"
+                                                <img src="/theme_arc/static/src/assets/card_icon/speedometer 1.png"
                                                      alt=""/>
                                                 <span class="d-block">
                                                     2000 KM
                                                 </span>
                                             </div>
                                             <div class="c_b_wrapper">
-                                                <img src="/theme_autofly/static/src/assets/card_icon/engine (1) 1.png"
+                                                <img src="/theme_arc/static/src/assets/card_icon/engine (1) 1.png"
                                                      alt=""/>
                                                 <span class="d-block">
                                                     Automatic
                                                 </span>
                                             </div>
                                             <div class="c_b_wrapper">
-                                                <img src="/theme_autofly/static/src/assets/card_icon/fuel-station 1.png"
+                                                <img src="/theme_arc/static/src/assets/card_icon/fuel-station 1.png"
                                                      alt=""/>
                                                 <span class="d-block">
                                                     Petrol

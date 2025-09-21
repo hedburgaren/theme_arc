@@ -14,11 +14,11 @@
                     font-weight: 400;
     font-size: 22px;
     line-height: 35px;
-    color: var(--grey-3);
+    color: var(--o-color-text, #747474);
     margin-bottom: 20px;
                 }
                 h6{
-                    color: var(--autofly-orange);
+                    color: var(--o-color-secondary, #EB583D);
                     font-size: 22px;
                     text-transform: capitalize;
                     font-weight: 700;

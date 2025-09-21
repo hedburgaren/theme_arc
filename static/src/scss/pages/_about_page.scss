@@ -32,8 +32,8 @@
                             text-align: center;
 
                             &.active {
-                                color: var(--autofly-orange) !important;
-                                border-bottom-color: var(--autofly-orange) !important;
+                                color: var(--o-color-secondary, #EB583D) !important;
+                                border-bottom-color: var(--o-color-secondary, #EB583D) !important;
                             }
                         }
                     }
@@ -50,7 +50,7 @@
                             font-weight: 400;
                             font-size: 14px;
                             line-height: 35px;
-                            color: var(--grey-3);
+                            color: var(--o-color-text, #747474);
                             margin-bottom: 20px;
                         }
                     }
@@ -68,7 +68,7 @@
             .year {
                 position: absolute;
                 bottom: -50px;
-                background-color: var(--autofly-orange);
+                background-color: var(--o-color-secondary, #EB583D);
                 color: var(--white-color);
                 border-radius: 5px;
                 height: 150px;
@@ -124,10 +124,10 @@
                 }
 
                 &:hover {
-                    border-color: var(--autofly-orange);
+                    border-color: var(--o-color-secondary, #EB583D);
 
                     h5 {
-                        color: var(--autofly-orange) !important;
+                        color: var(--o-color-secondary, #EB583D) !important;
                     }
 
                     img {
@@ -151,7 +151,7 @@
 
                     p {
                         font-size: 14px;
-                        color: var(--grey-1);
+                        color: var(--o-color-text-muted, #8b8b8b);
                         line-height: 30px;
                     }
                 }
@@ -168,7 +168,7 @@
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 35px;
-                    color: var(--grey-3);
+                    color: var(--o-color-text, #747474);
 
                 }
             }
@@ -265,7 +265,7 @@
                             }
 
                             p {
-                                color: var(--grey-1);
+                                color: var(--o-color-text-muted, #8b8b8b);
                                 font-size: 16px;
                                 margin-bottom: 10px !important;
 

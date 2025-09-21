@@ -137,7 +137,7 @@ body {
 }
 
 .common_p {
-    color: var(--autofly-orange);
+    color: var(--o-color-secondary, #EB583D);
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -148,5 +148,5 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 35px;
-    color: var(--grey-3);
+    color: var(--o-color-text, #747474);
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <!--    Blog page inheriting to add banner-->
-    <template id="theme_autofly_blog" inherit_id="website_blog.blog_post_short">
+    <template id="theme_arc_blog" inherit_id="website_blog.blog_post_short">
         <xpath expr="//div[@id='o_wblog_blog_top']" position="replace">
             <div style="display:none;">
                 <div id="o_wblog_blog_top_droppable"/>

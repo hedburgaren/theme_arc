@@ -1,4 +1,4 @@
-## Module <theme_autofly>
+## Module <theme_arc>
 
 #### 27.2.2025
 #### Version 18.0.1.0.0

@@ -15,7 +15,7 @@
             }
 
             p {
-                color: var(--grey-2)
+                color: var(--o-color-text-muted, #606060)
             }
 
 
@@ -87,7 +87,7 @@
                 text-decoration: none;
 
                 &:hover {
-                    color: var(--autofly-orange) !important;
+                    color: var(--o-color-secondary, #EB583D) !important;
                 }
             }
         }

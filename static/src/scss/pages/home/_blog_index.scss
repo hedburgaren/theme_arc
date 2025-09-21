@@ -15,7 +15,7 @@
 .b_img{
     position: relative;
     .tag {
-        color: var(--autofly-orange);
+        color: var(--o-color-secondary, #EB583D);
         position: absolute;
         border-radius: 3px;
         font-weight: 400;
@@ -44,7 +44,7 @@
 
                     .card-text {
                         font-size: 18px;
-                        color: var(--grey-3);
+                        color: var(--o-color-text, #747474);
                     }
 
                     .read_more {
@@ -52,7 +52,7 @@
                         font-size: 18px;
                         transition: 0.3s;
                         &:hover {
-                            color: var(--autofly-orange);
+                            color: var(--o-color-secondary, #EB583D);
                             text-decoration: none;
 
                           
@@ -66,7 +66,7 @@
 
 
                             svg path {
-                                fill:var(--autofly-orange);
+                                fill:var(--o-color-secondary, #EB583D);
                                 transition: all ease 0.3s; 
                                 transition: 0.3s;
                               }

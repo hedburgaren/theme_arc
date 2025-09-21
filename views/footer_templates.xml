@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <!--    inheriting footer for replacing the existing footer  -->
-    <template id="theme_autofly_footer" inherit_id="website.footer_custom"
+    <template id="theme_arc_footer" inherit_id="website.footer_custom"
               name="Autofly Footer">
         <xpath expr="//div[@id='footer']" position="replace">
             <section class="footer">
