@@ -896,7 +896,7 @@ template {
 }
 
 .header_modern_light .navigation .navbar .navbar-nav .nav-item .nav-link {
-  color: var(--grey-1) !important;
+  color: var(--o-color-menu-text, #232022) !important;
   font-size: 14px;
   margin: 0px 15px;
   font-weight: 400;
